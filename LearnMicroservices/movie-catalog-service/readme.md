@@ -23,3 +23,7 @@ curl --location 'http://localhost:8090/movie-info/save' \
 }
 ]
 '
+
+
+
+need to install https://zipkin.io/pages/quickstart form docker. other way
