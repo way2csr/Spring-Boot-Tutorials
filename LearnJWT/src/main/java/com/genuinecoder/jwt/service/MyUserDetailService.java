@@ -1,5 +1,7 @@
-package com.genuinecoder.jwt.model;
+package com.genuinecoder.jwt.service;
 
+import com.genuinecoder.jwt.model.MyUser;
+import com.genuinecoder.jwt.repo.MyUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

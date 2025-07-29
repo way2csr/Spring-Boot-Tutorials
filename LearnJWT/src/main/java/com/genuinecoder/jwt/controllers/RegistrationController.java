@@ -1,7 +1,7 @@
-package com.genuinecoder.jwt;
+package com.genuinecoder.jwt.controllers;
 
 import com.genuinecoder.jwt.model.MyUser;
-import com.genuinecoder.jwt.model.MyUserRepository;
+import com.genuinecoder.jwt.repo.MyUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +16,7 @@ public class RegistrationController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping("/register/user")
+    @PostMapping("/register")
     public MyUser createUser(@RequestBody MyUser user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         return myUserRepository.save(user);

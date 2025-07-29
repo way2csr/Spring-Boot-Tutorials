@@ -1,5 +1,6 @@
-package com.genuinecoder.jwt.model;
+package com.genuinecoder.jwt.repo;
 
+import com.genuinecoder.jwt.model.MyUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

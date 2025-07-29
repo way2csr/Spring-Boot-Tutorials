@@ -1,6 +1,6 @@
-package com.genuinecoder.jwt;
+package com.genuinecoder.jwt.config;
 
-import com.genuinecoder.jwt.model.MyUserDetailService;
+import com.genuinecoder.jwt.service.MyUserDetailService;
 import com.genuinecoder.jwt.webtoken.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

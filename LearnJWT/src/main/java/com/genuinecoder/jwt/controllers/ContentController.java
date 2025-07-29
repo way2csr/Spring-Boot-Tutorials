@@ -1,6 +1,6 @@
-package com.genuinecoder.jwt;
+package com.genuinecoder.jwt.controllers;
 
-import com.genuinecoder.jwt.model.MyUserDetailService;
+import com.genuinecoder.jwt.service.MyUserDetailService;
 import com.genuinecoder.jwt.webtoken.JwtService;
 import com.genuinecoder.jwt.webtoken.LoginForm;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +38,7 @@ public class ContentController {
         return "Welcome to USER home!";
     }
 
-    @PostMapping("/authenticate")
+    @PostMapping("/token")
     public String authenticateAndGetToken(@RequestBody LoginForm loginForm) {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                 loginForm.username(), loginForm.password()
